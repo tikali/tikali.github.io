@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+    <title>Tikali</title>
+</head>
+
+<style>
+*{margin:0;padding:0;font-family: Arial;}
+html,body{
+	width: 100%;
+	height:100%;
+	background-image:url("site-background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+.container{
+	border:1px solid transparent;
+	width: 80%;
+	min-height: 100%;
+	margin:0 auto;
+}
+
+header{
+	width: 100%;
+	padding: 0.75% 0px;
+	border-radius:10px;
+	background-color: #F8F8F8; 
+	margin-top:1%;
+	float: left;
+	box-shadow: 0px 1px 5px 1px grey;
+}
+
+header a{
+	float: left;
+	color: #414141;
+	text-decoration: none;
+	font-size: 1.7em;
+	padding: 0 2%;
+	letter-spacing: 1px;
+}
+
+header #list-menu{
+	float:right;
+	padding: 0.5% 0;
+	width: 250px;
+	display: inline;
+}
+
+header #list-menu span{
+	margin-right:5%; 
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #414141;
+}
+
+header #list-menu span.active{
+	color:#1CE57F;
+}
+
+.board{
+	width: 100%;
+	padding:0% 0%;
+	background-color: transparent;
+	border:0px solid green;
+	margin-top:7%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.clock-block{
+	width: 220px;
+	padding: 10px 10px;
+	border-radius: 10px;
+	box-shadow: 0px 1px 5px 1px grey;
+	background-color:#F8F8F8;
+	margin: 1% 2%;
+	text-align: center;
+}
+
+.clock-block img{
+	width: 100%;
+	border-radius: 10px;
+	margin-top:2%; 
+	cursor:zoom-in;
+}
+
+.brand-name{
+	letter-spacing: 1px;
+	color:#414141;
+	
+
+}
+
+.clock-block div{
+	width: 100%;
+	padding: 7% 0 4% 0;
+}
+
+.clock-block div span{
+	border: 2px solid #414141;
+	padding: 3% 6%;
+	font-size: 1.2em;
+	color:#414141;
+	cursor: pointer;
+}
+
+.clock-block div span:hover{
+	color:#F4F4F4;
+	background: #414141;
+}
+
+.zoom{
+	position: absolute;
+	z-index: 999;
+	background: rgba(20,20,20,0.8);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	cursor: zoom-out;
+}
+
+.zoom img{
+	width: 43%;
+	position:absolute;
+	margin:auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+
+@media (max-width: 1144px){
+
+	.container{
+		width: 90%;
+	}
+
+	.zoom img{
+	width: 48%;
+	}
+}
+
+@media (max-width: 700px){
+	.container{
+		width: 95%;
+	}
+
+	.clock-block{
+		width:180px;
+	}
+
+	.zoom img{
+	width: 58%;
+	}
+}
+
+@media (max-width: 480px) and (min-width: 0px){
+
+	header a{
+		display: none;
+	}
+
+	header #list-menu{
+		float: none;
+		display: inline-flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	header #list-menu span{
+		margin: 0;
+		padding: 4px 8px;
+	}
+
+	.clock-block{
+		width:130px;
+		margin: 2% 2%;
+	}
+
+	.zoom img{
+	width: 70%;
+	}
+}
+
+@media (min-width: 1800px){
+	.clock-block{
+		width:300px;
+		margin: 1% 2%;
+	}
+
+	header a{
+		font-size: 3em;
+	}
+
+	header #list-menu span{
+		font-size: 1.8em;
+	}
+
+	header #list-menu{
+		width: 400px;
+	}
+}
+
+</style>
+
+
+<body>
+
+<div class="zoom">
+	<img src="" alt="Часы в зуме">
+</div>
+
+<div class="container">
+	
+	<header>
+		<a href="#">Tikali</a>
+		<div id="list-menu">
+			<span class="active s-a" sex="a">Все</span>
+			<span class="s-m" sex="m">Мужские</span>
+			<span class="s-w" sex="w">Женские</span>
+		</div>
+	</header>
+
+	<div class="board">
+	
+		<div class="clock-block s-m">
+			<span class="brand-name">MULILAI</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1gcZAcm3PL1JjSZFtq6AlRVXal/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv7l4">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">Relogio Masculino best</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1LebHKkyWBuNjy0Fpq6yssXXax/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv7uu">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">SINOBI</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1pA9cb3jN8KJjSZFkq6yboXXa5/SINOBI.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv8c5">Подробнее</span></div>
+		</div>
+		
+		<div class="clock-block s-m">
+			<span class="brand-name">Hodinky Ceasuri Relogio</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1t8pFRFXXXXXmaFXXq6xXFXXXj/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv7cd">Подробнее</span></div>
+		</div>
+		
+		<div class="clock-block s-m s-w">
+			<span class="brand-name">Tevise</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1KaaGlz3z9KJjy0Fmq6xiwXXaA/Tevise-2018.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv9a6">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Hodinky Ceasuri Relogio</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1B8mnKFXXXXb.XFXXq6xXFXXX2/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv7cd">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">YAZOLE</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1Jowmem8YBeNkSnb4q6yevFXaG/YAZOLE.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv90g">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m s-w">
+			<span class="brand-name">SmartWatch</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1OuWEfMLD8KJjSszeq6yGRpXaY/Bluetooth-SIM-TF-SmartWatch.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv9gs">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Gofuly</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1Ki_SGr1YBuNjSszeq6yblFXaU/Gofuly-2017.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv9tm">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">Gofuly</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1ie5kQpXXXXarapXXq6xXFXXXS/Gofuly-2017.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rv9tm">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m s-w">
+			<span class="brand-name">SmartWatch</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1P82vuL5TBuNjSspmq6yDRVXao/Bluetooth-IOS-Android.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rva69">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">Relogio Masculino</span>
+			<img src="https://ae01.alicdn.com/kf/HTB13xmSqHSYBuNjSspiq6xNzpXaF/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rvaef">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">SMAEL</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1E9d_SpXXXXc9aXXXq6xXFXXXU/50.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rydn7">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Relojes</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1KAZFlsnI8KJjSspeq6AwIpXa2/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rydt8">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">SMAEL</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1Pen9QVXXXXX0aXXXq6xXFXXXC/SMAEL-Dual.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rye10">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Yazole</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1OFojOFXXXXbpXpXXq6xXFXXXF/Yazole-2018.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryezt">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Vansvar</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1oKSbRpXXXXXbapXXq6xXFXXXq/Vansvar.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryf9j">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">Relogio masculino</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1d1gPQpXXXXcVXXXXq6xXFXXXy/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryffy">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">LVPAI</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1nJtfqruWBuNjSszgq6z8jVXa5/LVPAI.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryg60">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">LVPAI</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1PyX6NVXXXXXUXpXXq6xXFXXX9/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rygj1">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">GRAND TOURING</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1ueWBd25TBuNjSspcq6znGFXa5/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rygx1">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Gogoey</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1Gd95BfuSBuNkHFqDq6xfhVXag/Gogoey.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryh3u">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">Naviforce</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1m3uLhBcHL1JjSZJiq6AKcpXa8/Naviforce-S.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryvc7">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Relogio</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1ygREcqLN8KJjSZFmq6AQ6XXai/Relogio.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryvo9">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">CURREN</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1hZWXbvL85uJjSZFyq6y93XXaF/Relogio-masculino-Curren.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2rywpz">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Montre Femme</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1RvRckOCYBuNkHFCcq6AHtVXaQ/2018.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryvzq">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">CURREN</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1Izmpg26H8KJjy0Fjq6yXepXaA/Relogio-masculino-CURREN.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2ryw8a">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">Megir</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1.c1.fFGWBuNjy0Fbq6z4sXXam/Megir.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2s0vgt">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">Lige</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1PdbCSpXXXXXIXVXXq6xXFXXXb/Lige.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2s0vl3">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">Crystal</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1VQIAqSBYBeNjy0Feq6znmFXaI/-.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2s0vrb">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">NORTH</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1cyoDKFXXXXcdXXXXq6xXFXXXU/Watch-Sport-30.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2s0w6o">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-w">
+			<span class="brand-name">LVPAI</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1Ys0aCKuSBuNjy1Xcq6AYjFXa5/2016-Lvpai.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2s0vyb">Подробнее</span></div>
+		</div>
+
+		<div class="clock-block s-m">
+			<span class="brand-name">CURREN</span>
+			<img src="https://ae01.alicdn.com/kf/HTB1H7zpJVXXXXX2XpXXq6xXFXXX4/CURREN.jpg_640x640.jpg" alt="Часы">
+			<div><span url="http://ali.pub/2s0wci">Подробнее</span></div>
+		</div>
+
+
+
+
+
+	</div>
+
+</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+	
+	$(".clock-block img").click(function(event) {
+		$(".zoom img").attr("src",$(this).attr('src'));
+		$(".zoom").show()
+	});
+
+	$(".zoom").click(function(){
+		$(".zoom").hide()
+	})
+
+	$("#list-menu span").click(function(event) {
+		$("#list-menu span").removeClass("active")
+		$(this).attr("class","active")
+
+	});
+
+	$(".clock-block div span").click(function(){
+		url = $(this).attr("url");
+		window.open(url);
+	})
+
+	$("#list-menu span").click(function(e){
+		sex = $(this).attr("sex");
+
+		if(sex == "m"){
+			$(".clock-block").hide()
+			$(".s-m").show()
+		} else if(sex == "w") {
+			$(".clock-block").hide()
+			$(".s-w").show()			
+		} else if (sex == "a"){
+			$(".clock-block").show()
+		}
+	})
+});
+
+</script>
+
+</html>
